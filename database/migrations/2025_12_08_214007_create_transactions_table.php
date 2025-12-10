@@ -48,9 +48,9 @@ return new class extends Migration {
                 ->constrained("categories")
                 ->nullOnDelete();
             $table
-                ->foreignId("subcategory_id")
+                ->foreignId("sub_category_id")
                 ->nullable()
-                ->constrained("subcategories")
+                ->constrained("sub_categories")
                 ->nullOnDelete();
 
             $table->decimal("amount", 12, 2);
