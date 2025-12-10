@@ -16,7 +16,7 @@ return new class extends Migration {
             $table->string("name");
             $table->string("number");
             $table
-                ->foreignId("accounttype_id")
+                ->foreignId("account_type_id")
                 ->constrained()
                 ->cascadeOnDelete();
             $table->foreignId("currency_id")->constrained()->cascadeOnDelete();
